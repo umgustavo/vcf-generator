@@ -9,4 +9,19 @@ export const theme = extendTheme({
         initialColorMode: 'dark',
         useSystemColorMode: false,
     },
+    styles: {
+        global: (props) => ({
+            '@keyframes heartbeat': {
+                '0%': {
+                    transform: 'scale(1.1)',
+                },
+                '100%': {
+                    transform: 'scale(1)',
+                },
+            },
+            '.heartbeat': {
+                animation: 'heartbeat .6s ease-out infinite',
+            },
+        }),
+    },
 });

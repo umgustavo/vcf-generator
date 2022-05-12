@@ -105,7 +105,11 @@ function App() {
             >
                 <Text color='gray.500' d='flex' alignItems='center' gap='8px'>
                     {t('footer_1')}
-                    <FaHeart color='red' display='inline-block' />
+                    <FaHeart
+                        color='red'
+                        display='inline-block'
+                        className='heartbeat'
+                    />
                     {t('footer_2')}
                 </Text>
             </Box>
