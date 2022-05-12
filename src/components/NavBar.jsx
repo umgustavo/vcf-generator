@@ -1,4 +1,4 @@
-import { Box, Container, Heading, Link } from '@chakra-ui/react'
+import { Box, Container, Heading, Link } from '@chakra-ui/react';
 
 export default function NavBar() {
     return (
@@ -19,5 +19,5 @@ export default function NavBar() {
                 </Link>
             </Container>
         </Box>
-    )
+    );
 }
