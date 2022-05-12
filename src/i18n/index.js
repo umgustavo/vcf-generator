@@ -31,7 +31,6 @@ i18n.use(LanguageDetector)
             escapeValue: false,
         },
         fallbackLng: 'en',
-        lng: 'en',
     });
 
 export default i18n;
