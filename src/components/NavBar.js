@@ -13,6 +13,7 @@ export default function NavBar() {
                 <Link
                     color='gray.600'
                     href={`https://github.com/umgustavo/vcf-generator/commit/${process.env.REACT_APP_GIT_SHA}`}
+                    target='_blank'
                 >
                     {process.env.REACT_APP_GIT_SHA}
                 </Link>
