@@ -1,0 +1,9 @@
+{
+    "translation": {
+        "generate_vcf": "Gerar VCF",
+        "description": "Coloque aqui a lista dos contatos com o nome, adicione o separador (vírgula, por padrão) e em seguida adicione o número de telefone com o código do país (+55 para Brasil) e o DDD. Você pode repetir esse processo em quantas linhas quiser.",
+        "examples": "João da Silva,+55990000000\nMaria Pereira,+55990000000\nGustavo Rocha,+55990000000",
+        "footer_1": "Ferramenta feita com",
+        "footer_2": "para meu pai."
+    }
+}

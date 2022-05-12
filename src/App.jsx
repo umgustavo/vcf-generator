@@ -8,17 +8,13 @@ import {
     VStack,
 } from '@chakra-ui/react';
 import { FaHeart } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 import NavBar from './components/NavBar';
 
 function App() {
+    const { t } = useTranslation();
     const [buttonDisabled, setButtonDisabled] = useState(true);
     const textRef = useRef();
-
-    const defaultPlaceholder = [
-        'Contato 1,+55990000000',
-        'Contato 2,+55990000000',
-        'Contato 3,+55990000000',
-    ];
 
     function validateInput(str) {
         try {
@@ -79,13 +75,10 @@ function App() {
             <Container maxW='container.sm'>
                 <VStack spacing={3}>
                     <Text color='gray.500' textAlign='justify'>
-                        Coloque aqui a lista dos contatos com o nome, adicione
-                        uma vírgula e em seguida adicione o número de telefone
-                        com o código do país (+55 para Brasil) e o DDD. Você
-                        pode repetir esse processo em quantas linhas quiser.
+                        {t('description')}
                     </Text>
                     <Textarea
-                        placeholder={defaultPlaceholder.join('\n')}
+                        placeholder={t('examples')}
                         rows={10}
                         fontFamily='monospace'
                         onInput={handleInput}
@@ -96,7 +89,7 @@ function App() {
                         isDisabled={buttonDisabled}
                         onClick={handleSubmit}
                     >
-                        Gerar VCF
+                        {t('generate_vcf')}
                     </Button>
                 </VStack>
             </Container>
@@ -111,9 +104,9 @@ function App() {
                 justifyContent='center'
             >
                 <Text color='gray.500' d='flex' alignItems='center' gap='8px'>
-                    Ferramenta criada com{' '}
+                    {t('footer_1')}
                     <FaHeart color='red' display='inline-block' />
-                    especialmente para meu pai.
+                    {t('footer_2')}
                 </Text>
             </Box>
         </Box>

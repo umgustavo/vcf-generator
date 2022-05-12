@@ -1,0 +1,9 @@
+{
+    "translation": {
+        "generate_vcf": "Generate VCF",
+        "description": "Put here a list of contacts with the name, add the separator (comma, by default), then the phone number with the country and area code. You can repeat this process as many lines as you want.",
+        "examples": "John Doe,+1-555-555-5555\nJane Doe,+1-555-555-5555\nBob,+1-555-555-5555",
+        "footer_1": "Tool made with",
+        "footer_2": "for my dad."
+    }
+}
