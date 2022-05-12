@@ -2,7 +2,7 @@ import { Box, Container, Heading, Link } from '@chakra-ui/react';
 
 export default function NavBar() {
     return (
-        <Box as='nav' py={6} borderBottom='1px' borderColor='gray.700' mb={5}>
+        <Box as='nav' py={6} borderBottom='2px' borderColor='border' mb={5}>
             <Container
                 maxW='container.sm'
                 d='flex'
@@ -11,9 +11,9 @@ export default function NavBar() {
             >
                 <Heading>VCF Generator</Heading>
                 <Link
-                    color='gray.600'
                     href={`https://github.com/umgustavo/vcf-generator/commit/${process.env.REACT_APP_GIT_SHA}`}
                     target='_blank'
+                    color='dim'
                 >
                     {process.env.REACT_APP_GIT_SHA}
                 </Link>

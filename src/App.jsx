@@ -7,9 +7,10 @@ import {
     Textarea,
     VStack,
 } from '@chakra-ui/react';
-import { FaHeart } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
+import Background from './components/Background';
 
 function App() {
     const { t } = useTranslation();
@@ -74,9 +75,7 @@ function App() {
             <NavBar />
             <Container maxW='container.sm'>
                 <VStack spacing={3}>
-                    <Text color='gray.500' textAlign='justify'>
-                        {t('description')}
-                    </Text>
+                    <Text textAlign='justify'>{t('description')}</Text>
                     <Textarea
                         placeholder={t('examples')}
                         rows={10}
@@ -93,26 +92,9 @@ function App() {
                     </Button>
                 </VStack>
             </Container>
-            <Box
-                display={['none', 'none', 'flex']}
-                position='fixed'
-                bottom={0}
-                left={0}
-                p={3}
-                background='gray.900'
-                w='100%'
-                justifyContent='center'
-            >
-                <Text color='gray.500' d='flex' alignItems='center' gap='8px'>
-                    {t('footer_1')}
-                    <FaHeart
-                        color='red'
-                        display='inline-block'
-                        className='heartbeat'
-                    />
-                    {t('footer_2')}
-                </Text>
-            </Box>
+
+            <Footer />
+            <Background />
         </Box>
     );
 }
